@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+target 'SCHProgress' do
+    pod 'Masonry'
+    pod 'SDWebImage'
+    pod 'MJExtension'
+    pod 'MBProgressHUD'
+#    pod 'AFNetWorking'
+    pod 'AFNetworking', '~> 3.1.0'
+    
+end

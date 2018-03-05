@@ -1,0 +1,45 @@
+//
+//  SCHJump.m
+//  SCHProgress
+//
+//  Created by Mike on 2018/1/15.
+//  Copyright © 2018年 Mike. All rights reserved.
+//
+
+#import "SCHJump.h"
+#import "SCHHomeViewController.h"
+
+@implementation SCHJump
+#pragma mark -- 跳转到首页
++(void)jumpToHomeViewController{
+    SCHHomeViewController *home = [[SCHHomeViewController alloc] init];
+    home.vcTitle = @"首页";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:home];
+    kAppWindow.rootViewController = nav;
+}
+
+
+/**********跳转方式************/
+#pragma mark -- push
+- (void)pushVC:(UIViewController *)controller{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UINavigationController *nav = (UINavigationController *)window.rootViewController;
+    [nav.navigationController pushViewController:controller animated:YES];
+    
+}
+
+#pragma mark -- present
++ (void)presentToVC:(UIViewController *)controller{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UINavigationController *mainTabBar = (UINavigationController *)window.rootViewController;
+    [mainTabBar presentViewController:controller animated:YES completion:nil];
+}
+
+#pragma mark -- dismiss
++ (void)dismissFromVC{
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UINavigationController *mainTabBar = (UINavigationController *)window.rootViewController;
+    [mainTabBar dismissViewControllerAnimated:YES completion:nil];
+}
+@end

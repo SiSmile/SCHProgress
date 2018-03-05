@@ -1,0 +1,92 @@
+//
+//  SCHHomeViewController.m
+//  SCHProgress
+//
+//  Created by Mike on 2018/1/15.
+//  Copyright © 2018年 Mike. All rights reserved.
+//
+
+#import "SCHHomeViewController.h"
+#import "SCHHomeViewCell.h"
+#import "SCHHomeModel.h"
+#import "UIButton+SCH.h"
+@interface SCHHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) SCHTableView *tableView;
+@end
+
+@implementation SCHHomeViewController
+#pragma mark --- 创建tableView
+- (SCHTableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[SCHTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerNib:[UINib nibWithNibName:@"SCHHomeViewCell" bundle:nil] forCellReuseIdentifier:@"homeCellID"];
+    }
+    return _tableView;
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //1.创建tableView
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).offset(0);
+    }];
+    
+    //2.数据源
+    NSArray *arr = @[@{@"name":@"MVVM"},@{@"name":@"蓝牙"},@{@"name":@"直播间"},@{@"name":@"BaiDuSDK"}];
+    for (NSDictionary *dic in arr) {
+        SCHHomeModel *model = [SCHHomeModel mj_objectWithKeyValues:dic];
+        [self.tableView.dataArray addObject:model];
+    }
+    [self.tableView reloadData];
+    
+    [arr bk_each:^(id obj) {
+        
+    }];
+   
+}
+
+/////////////////////////////////////代理方法////////////////////////////////////////
+#pragma mark - tableViewDelegate TableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.tableView.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    SCHHomeViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"homeCellID"];
+    cell.model = self.tableView.dataArray[indexPath.row];
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 40;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NSInteger index = indexPath.row;
+    SCHHomeModel *model = self.tableView.dataArray[indexPath.row];
+    
+    switch (index) {
+        case 0:
+            [SCHJump jumpToMVVMViewController:self Title:model.name];
+            break;
+        case 1:
+            [SCHJump jumpToBluetoothViewController:self Title:model.name];
+            break;
+        case 2:
+            [SCHJump jumpToLiveSreamingController:self Title:model.name];
+            break;
+        case 3:
+            [SCHJump jumpToBaiDuController:self Title:model.name];
+            break;
+            
+        default:
+            break;
+    }
+   
+}
+
+@end

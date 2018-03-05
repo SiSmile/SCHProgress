@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0023C9D5DF26D7C3DF7BE21F /* libPods-SCHProgress.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 964FBBF34321F6B9017573C3 /* libPods-SCHProgress.a */; };
+		271A9C6D200D91780027D84B /* SCHMvvmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C6C200D91780027D84B /* SCHMvvmViewController.m */; };
+		271A9C72200D9AB00027D84B /* SCHMvvmViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C71200D9AB00027D84B /* SCHMvvmViewModel.m */; };
+		271A9C75200D9DCF0027D84B /* SCHHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C74200D9DCF0027D84B /* SCHHttpManager.m */; };
+		271A9C78200DA46F0027D84B /* SCHMvvmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C77200DA46F0027D84B /* SCHMvvmModel.m */; };
+		271A9C7F200DAD830027D84B /* SCHMvvmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C7D200DAD830027D84B /* SCHMvvmCell.m */; };
+		271A9C80200DAD830027D84B /* SCHMvvmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271A9C7E200DAD830027D84B /* SCHMvvmCell.xib */; };
+		271A9C86200DCE4D0027D84B /* SCHMvvmUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C85200DCE4D0027D84B /* SCHMvvmUserModel.m */; };
+		271A9C89200DD8D30027D84B /* SCHMvvmClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A9C88200DD8D30027D84B /* SCHMvvmClassModel.m */; };
+		2728556520158FEF000CD6CD /* SCHBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2728556420158FEF000CD6CD /* SCHBluetoothViewController.m */; };
+		27AFD2CC204BA9CA00312B32 /* SCHBaiDuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AFD2CB204BA9CA00312B32 /* SCHBaiDuViewController.m */; };
+		27AFD2CF204BB13900312B32 /* AppDelegate+SCHAppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AFD2CE204BB13900312B32 /* AppDelegate+SCHAppService.m */; };
+		27AFD2D2204C065100312B32 /* SCHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AFD2D1204C065100312B32 /* SCHLocationManager.m */; };
+		27B8E79A200C8D0300AEA022 /* SCHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E799200C8D0300AEA022 /* SCHTableView.m */; };
+		27B8E7A1200C954100AEA022 /* SCHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E7A0200C954100AEA022 /* SCHBaseViewController.m */; };
+		27B8E7A8200C961600AEA022 /* SCHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E7A7200C961600AEA022 /* SCHHomeViewController.m */; };
+		27B8E7AF200C9AB400AEA022 /* SCHHomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E7AD200C9AB400AEA022 /* SCHHomeViewCell.m */; };
+		27B8E7B0200C9AB400AEA022 /* SCHHomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27B8E7AE200C9AB400AEA022 /* SCHHomeViewCell.xib */; };
+		27B8E7B3200C9CFD00AEA022 /* SCHJump.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E7B2200C9CFD00AEA022 /* SCHJump.m */; };
+		27B8E7B6200CAAA500AEA022 /* SCHHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E7B5200CAAA500AEA022 /* SCHHomeModel.m */; };
+		27D96E19201862FF00DDCC4F /* UIButton+SCH.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D96E18201862FF00DDCC4F /* UIButton+SCH.m */; };
+		27E87DAC2019B70000DF76D7 /* SCHLiveStreamingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E87DAB2019B70000DF76D7 /* SCHLiveStreamingController.m */; };
+		27E87DBB2019BA3800DF76D7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E87DBA2019BA3800DF76D7 /* libz.tbd */; };
+		27E87DBD2019BA4200DF76D7 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E87DBC2019BA4200DF76D7 /* libbz2.tbd */; };
+		27F1CE3F200C838B00011F29 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27F1CE3E200C838B00011F29 /* AppDelegate.mm */; };
+		27F1CE42200C838B00011F29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F1CE41200C838B00011F29 /* ViewController.m */; };
+		27F1CE47200C838B00011F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F1CE46200C838B00011F29 /* Assets.xcassets */; };
+		27F1CE4D200C838B00011F29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F1CE4C200C838B00011F29 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		271A9C6B200D91780027D84B /* SCHMvvmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmViewController.h; sourceTree = "<group>"; };
+		271A9C6C200D91780027D84B /* SCHMvvmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmViewController.m; sourceTree = "<group>"; };
+		271A9C70200D9AB00027D84B /* SCHMvvmViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmViewModel.h; sourceTree = "<group>"; };
+		271A9C71200D9AB00027D84B /* SCHMvvmViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmViewModel.m; sourceTree = "<group>"; };
+		271A9C73200D9DCF0027D84B /* SCHHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHHttpManager.h; sourceTree = "<group>"; };
+		271A9C74200D9DCF0027D84B /* SCHHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHHttpManager.m; sourceTree = "<group>"; };
+		271A9C76200DA46F0027D84B /* SCHMvvmModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmModel.h; sourceTree = "<group>"; };
+		271A9C77200DA46F0027D84B /* SCHMvvmModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmModel.m; sourceTree = "<group>"; };
+		271A9C7C200DAD830027D84B /* SCHMvvmCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmCell.h; sourceTree = "<group>"; };
+		271A9C7D200DAD830027D84B /* SCHMvvmCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmCell.m; sourceTree = "<group>"; };
+		271A9C7E200DAD830027D84B /* SCHMvvmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHMvvmCell.xib; sourceTree = "<group>"; };
+		271A9C84200DCE4D0027D84B /* SCHMvvmUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmUserModel.h; sourceTree = "<group>"; };
+		271A9C85200DCE4D0027D84B /* SCHMvvmUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmUserModel.m; sourceTree = "<group>"; };
+		271A9C87200DD8D30027D84B /* SCHMvvmClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHMvvmClassModel.h; sourceTree = "<group>"; };
+		271A9C88200DD8D30027D84B /* SCHMvvmClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHMvvmClassModel.m; sourceTree = "<group>"; };
+		2728556320158FEF000CD6CD /* SCHBluetoothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHBluetoothViewController.h; sourceTree = "<group>"; };
+		2728556420158FEF000CD6CD /* SCHBluetoothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHBluetoothViewController.m; sourceTree = "<group>"; };
+		27AFD2CA204BA9CA00312B32 /* SCHBaiDuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHBaiDuViewController.h; sourceTree = "<group>"; };
+		27AFD2CB204BA9CA00312B32 /* SCHBaiDuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHBaiDuViewController.m; sourceTree = "<group>"; };
+		27AFD2CD204BB13900312B32 /* AppDelegate+SCHAppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SCHAppService.h"; sourceTree = "<group>"; };
+		27AFD2CE204BB13900312B32 /* AppDelegate+SCHAppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SCHAppService.m"; sourceTree = "<group>"; };
+		27AFD2D0204C065100312B32 /* SCHLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHLocationManager.h; sourceTree = "<group>"; };
+		27AFD2D1204C065100312B32 /* SCHLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHLocationManager.m; sourceTree = "<group>"; };
+		27B8E798200C8D0300AEA022 /* SCHTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHTableView.h; sourceTree = "<group>"; };
+		27B8E799200C8D0300AEA022 /* SCHTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHTableView.m; sourceTree = "<group>"; };
+		27B8E79B200C902800AEA022 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		27B8E79F200C954100AEA022 /* SCHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHBaseViewController.h; sourceTree = "<group>"; };
+		27B8E7A0200C954100AEA022 /* SCHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHBaseViewController.m; sourceTree = "<group>"; };
+		27B8E7A6200C961600AEA022 /* SCHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHHomeViewController.h; sourceTree = "<group>"; };
+		27B8E7A7200C961600AEA022 /* SCHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHHomeViewController.m; sourceTree = "<group>"; };
+		27B8E7AC200C9AB400AEA022 /* SCHHomeViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHHomeViewCell.h; sourceTree = "<group>"; };
+		27B8E7AD200C9AB400AEA022 /* SCHHomeViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHHomeViewCell.m; sourceTree = "<group>"; };
+		27B8E7AE200C9AB400AEA022 /* SCHHomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHHomeViewCell.xib; sourceTree = "<group>"; };
+		27B8E7B1200C9CFD00AEA022 /* SCHJump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHJump.h; sourceTree = "<group>"; };
+		27B8E7B2200C9CFD00AEA022 /* SCHJump.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHJump.m; sourceTree = "<group>"; };
+		27B8E7B4200CAAA500AEA022 /* SCHHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHHomeModel.h; sourceTree = "<group>"; };
+		27B8E7B5200CAAA500AEA022 /* SCHHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHHomeModel.m; sourceTree = "<group>"; };
+		27D96E17201862FF00DDCC4F /* UIButton+SCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+SCH.h"; sourceTree = "<group>"; };
+		27D96E18201862FF00DDCC4F /* UIButton+SCH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SCH.m"; sourceTree = "<group>"; };
+		27E87DAA2019B70000DF76D7 /* SCHLiveStreamingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHLiveStreamingController.h; sourceTree = "<group>"; };
+		27E87DAB2019B70000DF76D7 /* SCHLiveStreamingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHLiveStreamingController.m; sourceTree = "<group>"; };
+		27E87DBA2019BA3800DF76D7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		27E87DBC2019BA4200DF76D7 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		27E87DBE2019BA4C00DF76D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		27E87DBF2019BA6400DF76D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27E87DC02019BA7000DF76D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27E87DC12019BA7C00DF76D7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		27E87DC22019BA9900DF76D7 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		27E87DC32019BAAA00DF76D7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		27E87DC42019BABA00DF76D7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		27E87DC52019BAC700DF76D7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		27E87DC62019BAD200DF76D7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27E87DC72019BADA00DF76D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27E87DC82019BAF200DF76D7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		27F1CE3A200C838B00011F29 /* SCHProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCHProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F1CE3D200C838B00011F29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27F1CE3E200C838B00011F29 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		27F1CE40200C838B00011F29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27F1CE41200C838B00011F29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27F1CE46200C838B00011F29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F1CE4B200C838B00011F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F1CE4C200C838B00011F29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F0DA24F9995C2E57DAD72C8 /* Pods-SCHProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCHProgress.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCHProgress/Pods-SCHProgress.release.xcconfig"; sourceTree = "<group>"; };
+		53EE02A3EF7B6D55F556D1B1 /* Pods-SCHProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCHProgress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCHProgress/Pods-SCHProgress.debug.xcconfig"; sourceTree = "<group>"; };
+		964FBBF34321F6B9017573C3 /* libPods-SCHProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCHProgress.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F1CE37200C838B00011F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E87DBB2019BA3800DF76D7 /* libz.tbd in Frameworks */,
+				0023C9D5DF26D7C3DF7BE21F /* libPods-SCHProgress.a in Frameworks */,
+				27E87DBD2019BA4200DF76D7 /* libbz2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		270BC6FD200CADB900240F65 /* Mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				270BC6FE200CADB900240F65 /* ViewController */,
+				271A9C6F200D9A8E0027D84B /* ViewModel */,
+				270BC6FF200CADB900240F65 /* Model */,
+			);
+			path = Mvvm;
+			sourceTree = "<group>";
+		};
+		270BC6FE200CADB900240F65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				270BC700200CADB900240F65 /* View */,
+				271A9C6B200D91780027D84B /* SCHMvvmViewController.h */,
+				271A9C6C200D91780027D84B /* SCHMvvmViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		270BC6FF200CADB900240F65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				271A9C76200DA46F0027D84B /* SCHMvvmModel.h */,
+				271A9C77200DA46F0027D84B /* SCHMvvmModel.m */,
+				271A9C84200DCE4D0027D84B /* SCHMvvmUserModel.h */,
+				271A9C85200DCE4D0027D84B /* SCHMvvmUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		270BC700200CADB900240F65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				271A9C7C200DAD830027D84B /* SCHMvvmCell.h */,
+				271A9C7D200DAD830027D84B /* SCHMvvmCell.m */,
+				271A9C7E200DAD830027D84B /* SCHMvvmCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		271A9C6F200D9A8E0027D84B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				271A9C70200D9AB00027D84B /* SCHMvvmViewModel.h */,
+				271A9C71200D9AB00027D84B /* SCHMvvmViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2728555F20158FCB000CD6CD /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				2728556020158FCB000CD6CD /* Controller */,
+				2728556120158FCB000CD6CD /* Model */,
+				2728556220158FCB000CD6CD /* View */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		2728556020158FCB000CD6CD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2728556320158FEF000CD6CD /* SCHBluetoothViewController.h */,
+				2728556420158FEF000CD6CD /* SCHBluetoothViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2728556120158FCB000CD6CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2728556220158FCB000CD6CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27338C262019B6C70089D90C /* LiveStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				27338C272019B6C70089D90C /* Controller */,
+				27338C282019B6C70089D90C /* Model */,
+				27338C292019B6C70089D90C /* View */,
+			);
+			path = LiveStreaming;
+			sourceTree = "<group>";
+		};
+		27338C272019B6C70089D90C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27E87DAA2019B70000DF76D7 /* SCHLiveStreamingController.h */,
+				27E87DAB2019B70000DF76D7 /* SCHLiveStreamingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27338C282019B6C70089D90C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27338C292019B6C70089D90C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27AFD2C6204BA99B00312B32 /* BaiDuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				27AFD2C7204BA99B00312B32 /* Controller */,
+				27AFD2C8204BA99B00312B32 /* Model */,
+				27AFD2C9204BA99B00312B32 /* View */,
+			);
+			path = BaiDuSDK;
+			sourceTree = "<group>";
+		};
+		27AFD2C7204BA99B00312B32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27AFD2CA204BA9CA00312B32 /* SCHBaiDuViewController.h */,
+				27AFD2CB204BA9CA00312B32 /* SCHBaiDuViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27AFD2C8204BA99B00312B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27AFD2C9204BA99B00312B32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27B8E790200C8BD600AEA022 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				27D96E16201862A700DDCC4F /* Category */,
+				27B8E795200C8C6800AEA022 /* Common */,
+				27B8E796200C8C6800AEA022 /* Custom */,
+				27B8E791200C8BD600AEA022 /* Tools */,
+				27B8E792200C8BD600AEA022 /* Model */,
+				27B8E794200C8C3900AEA022 /* Other */,
+				27B8E793200C8BD600AEA022 /* Request */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		27B8E791200C8BD600AEA022 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		27B8E792200C8BD600AEA022 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E797200C8C6F00AEA022 /* Base */,
+				27B8E7A2200C95FD00AEA022 /* Home */,
+				2728555F20158FCB000CD6CD /* Bluetooth */,
+				270BC6FD200CADB900240F65 /* Mvvm */,
+				27338C262019B6C70089D90C /* LiveStreaming */,
+				27AFD2C6204BA99B00312B32 /* BaiDuSDK */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27B8E793200C8BD600AEA022 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				271A9C73200D9DCF0027D84B /* SCHHttpManager.h */,
+				271A9C74200D9DCF0027D84B /* SCHHttpManager.m */,
+				27AFD2D0204C065100312B32 /* SCHLocationManager.h */,
+				27AFD2D1204C065100312B32 /* SCHLocationManager.m */,
+				271A9C87200DD8D30027D84B /* SCHMvvmClassModel.h */,
+				271A9C88200DD8D30027D84B /* SCHMvvmClassModel.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		27B8E794200C8C3900AEA022 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				27F1CE4C200C838B00011F29 /* main.m */,
+				27F1CE40200C838B00011F29 /* ViewController.h */,
+				27F1CE41200C838B00011F29 /* ViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		27B8E795200C8C6800AEA022 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E7B1200C9CFD00AEA022 /* SCHJump.h */,
+				27B8E7B2200C9CFD00AEA022 /* SCHJump.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27B8E796200C8C6800AEA022 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E798200C8D0300AEA022 /* SCHTableView.h */,
+				27B8E799200C8D0300AEA022 /* SCHTableView.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		27B8E797200C8C6F00AEA022 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E79C200C952200AEA022 /* Controller */,
+				27B8E79E200C952200AEA022 /* Model */,
+				27B8E79D200C952200AEA022 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		27B8E79C200C952200AEA022 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E79F200C954100AEA022 /* SCHBaseViewController.h */,
+				27B8E7A0200C954100AEA022 /* SCHBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27B8E79D200C952200AEA022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27B8E79E200C952200AEA022 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27B8E7A2200C95FD00AEA022 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E7A3200C95FD00AEA022 /* Controller */,
+				27B8E7A4200C95FD00AEA022 /* Model */,
+				27B8E7A5200C95FD00AEA022 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		27B8E7A3200C95FD00AEA022 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E7A6200C961600AEA022 /* SCHHomeViewController.h */,
+				27B8E7A7200C961600AEA022 /* SCHHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27B8E7A4200C95FD00AEA022 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E7B4200CAAA500AEA022 /* SCHHomeModel.h */,
+				27B8E7B5200CAAA500AEA022 /* SCHHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27B8E7A5200C95FD00AEA022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27B8E7AC200C9AB400AEA022 /* SCHHomeViewCell.h */,
+				27B8E7AD200C9AB400AEA022 /* SCHHomeViewCell.m */,
+				27B8E7AE200C9AB400AEA022 /* SCHHomeViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27D96E16201862A700DDCC4F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				27D96E17201862FF00DDCC4F /* UIButton+SCH.h */,
+				27D96E18201862FF00DDCC4F /* UIButton+SCH.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		27F1CE31200C838B00011F29 = {
+			isa = PBXGroup;
+			children = (
+				27F1CE3C200C838B00011F29 /* SCHProgress */,
+				27F1CE3B200C838B00011F29 /* Products */,
+				B245EFB010E1079B824D321A /* Pods */,
+				738C9A1FC2F4FD93D3A0807C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27F1CE3B200C838B00011F29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F1CE3A200C838B00011F29 /* SCHProgress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F1CE3C200C838B00011F29 /* SCHProgress */ = {
+			isa = PBXGroup;
+			children = (
+				27F1CE3D200C838B00011F29 /* AppDelegate.h */,
+				27F1CE3E200C838B00011F29 /* AppDelegate.mm */,
+				27AFD2CD204BB13900312B32 /* AppDelegate+SCHAppService.h */,
+				27AFD2CE204BB13900312B32 /* AppDelegate+SCHAppService.m */,
+				27B8E790200C8BD600AEA022 /* Class */,
+				27F1CE46200C838B00011F29 /* Assets.xcassets */,
+				27F1CE4B200C838B00011F29 /* Info.plist */,
+				27B8E79B200C902800AEA022 /* PrefixHeader.pch */,
+			);
+			path = SCHProgress;
+			sourceTree = "<group>";
+		};
+		738C9A1FC2F4FD93D3A0807C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27E87DC82019BAF200DF76D7 /* VideoToolbox.framework */,
+				27E87DC72019BADA00DF76D7 /* UIKit.framework */,
+				27E87DC62019BAD200DF76D7 /* QuartzCore.framework */,
+				27E87DC52019BAC700DF76D7 /* OpenGLES.framework */,
+				27E87DC42019BABA00DF76D7 /* MobileCoreServices.framework */,
+				27E87DC32019BAAA00DF76D7 /* MediaPlayer.framework */,
+				27E87DC22019BA9900DF76D7 /* CoreVideo.framework */,
+				27E87DC12019BA7C00DF76D7 /* CoreMedia.framework */,
+				27E87DC02019BA7000DF76D7 /* CoreGraphics.framework */,
+				27E87DBF2019BA6400DF76D7 /* AVFoundation.framework */,
+				27E87DBE2019BA4C00DF76D7 /* AudioToolbox.framework */,
+				27E87DBC2019BA4200DF76D7 /* libbz2.tbd */,
+				27E87DBA2019BA3800DF76D7 /* libz.tbd */,
+				964FBBF34321F6B9017573C3 /* libPods-SCHProgress.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B245EFB010E1079B824D321A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53EE02A3EF7B6D55F556D1B1 /* Pods-SCHProgress.debug.xcconfig */,
+				2F0DA24F9995C2E57DAD72C8 /* Pods-SCHProgress.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F1CE39200C838B00011F29 /* SCHProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F1CE50200C838B00011F29 /* Build configuration list for PBXNativeTarget "SCHProgress" */;
+			buildPhases = (
+				11DFE96C299E7ED7EDA7F393 /* [CP] Check Pods Manifest.lock */,
+				27F1CE36200C838B00011F29 /* Sources */,
+				27F1CE37200C838B00011F29 /* Frameworks */,
+				27F1CE38200C838B00011F29 /* Resources */,
+				5764430D723D524E2423168D /* [CP] Embed Pods Frameworks */,
+				D65894017E86A7B1ACCE7D90 /* [CP] Copy Pods Resources */,
+				27AFD2C5204B9C6500312B32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCHProgress;
+			productName = SCHProgress;
+			productReference = 27F1CE3A200C838B00011F29 /* SCHProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F1CE32200C838B00011F29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCH;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Mike;
+				TargetAttributes = {
+					27F1CE39200C838B00011F29 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 27F1CE35200C838B00011F29 /* Build configuration list for PBXProject "SCHProgress" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F1CE31200C838B00011F29;
+			productRefGroup = 27F1CE3B200C838B00011F29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F1CE39200C838B00011F29 /* SCHProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F1CE38200C838B00011F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271A9C80200DAD830027D84B /* SCHMvvmCell.xib in Resources */,
+				27B8E7B0200C9AB400AEA022 /* SCHHomeViewCell.xib in Resources */,
+				27F1CE47200C838B00011F29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11DFE96C299E7ED7EDA7F393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCHProgress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27AFD2C5204B9C6500312B32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"0428e6bd62\"\n# #\nBUGLY_APP_KEY=\"656ba828-ec80-4383-81b8-4cbf00d75162\"\n# #\nBUNDLE_IDENTIFIER=\"sicuihuan.SCHProgress\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\n UPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\n UPLOAD_SIMULATOR_SYMBOLS=1\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n    \n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n        P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n            P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n            \n            DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n            \n            echo \"-----------------------------\"\n            STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n            echo \"-----------------------------\"\n            \n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n            \n            #Remove temp dSYM archive\n            #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n            \n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n            \n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n            \n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n        }\n        \n        # .dSYM解析为bSYMBOL文件\n        function dSYMParse() {\n            DSYM_FILE=\"$1\"\n            DSYM_SYMBOL_FILE=\"$2\"\n            \n            echo \"--------------------------------\"\n            echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n            (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n            echo \"--------------------------------\"\n            \n        }\n        \n        # 执行\n        function run() {\n            \n            CONFIG_BUGLY_APP_ID=\"$1\"\n            CONFIG_BUGLY_APP_KEY=\"$2\"\n            \n            CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n            CONFIG_BUGLY_APP_VERSION=\"$4\"\n            CONFIG_DSYM_SOURCE_DIR=\"$5\"\n            CONFIG_DSYM_DEST_DIR=\"$6\"\n            CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n            \n            # 检查必须参数是否设置\n            if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n            exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n            fi\n            \n            if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n            exitWithMessage \"Error: Bugly App ID not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n            exitWithMessage \"Error: Bugly App Key not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n            exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n            exitWithMessage \"Error: App Version not defined.\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n            fi\n            \n            if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            mkdir ${CONFIG_DSYM_DEST_DIR}\n            fi\n            \n            DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n            IFS=$'\\n'\n            \n            echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n            RET=\"F\"\n            \n            #\n            for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n            RET=\"T\"\n            echo \"Found dSYM file: $dsymFile\"\n            \n            DSYM_FILE_NAME=${dsymFile##*/}\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n                DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n                \n                if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n                if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n                fi\n                # 如果只上传dSYM，直接压缩dSYM目录\n                zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n                else\n                # 使用符号表工具来生成Symbol文件\n                dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n                fi\n                \n                # 上传\n                dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n                done\n                \n                if [ $RET = \"F\" ]; then\n                exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n                fi\n            }\n            \n            # 在Xcode工程中执行\n            function runInXcode(){\n                echo \"Uploading dSYM to Bugly in Xcode ...\"\n                \n                echo \"Info.Plist : ${INFOPLIST_FILE}\"\n                \n                BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n                BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n                \n                # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n                if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n                BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n                else\n                BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n                fi\n                \n                echo \"--------------------------------\"\n                echo \"Prepare application information.\"\n                echo \"--------------------------------\"\n                \n                echo \"Product Name: ${PRODUCT_NAME}\"\n                echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n                echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n                echo \"Build: ${BUNDLE_VERSION}\"\n                \n                echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n                echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n                echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n                \n                echo \"--------------------------------\"\n                echo \"Check the arguments ...\"\n                \n                ##检查模拟器编译是否允许上传符号\n                if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n                if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否是Release模式编译\n                if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n                if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否Archive操作\n                if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n                if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n                echo \"Archive the package\"\n                else\n                exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n                fi\n                fi\n                \n                #\n                run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n            }\n            \n            # 根据Xcode的环境变量判断是否处于Xcode环境\n            INFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n            \n            BuildInXcode=\"F\"\n            if [ -f \"${INFO_PLIST_FILE}\" ]; then\n            BuildInXcode=\"T\"\n            fi\n            \n            if [ $BuildInXcode = \"T\" ]; then\n            runInXcode\n            else\n            echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n            # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n            BUGLY_APP_ID=\"$1\"\n            BUGLY_APP_KEY=\"$2\"\n            BUNDLE_IDENTIFIER=\"$3\"\n            BUGLY_APP_VERSION=\"$4\"\n            DWARF_DSYM_FOLDER_PATH=\"$5\"\n            SYMBOL_OUTPUT_PATH=\"$6\"\n            UPLOAD_DSYM_ONLY=$7\n            run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\n            fi\n";
+		};
+		5764430D723D524E2423168D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCHProgress/Pods-SCHProgress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65894017E86A7B1ACCE7D90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SCHProgress/Pods-SCHProgress-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SCHProgress/Pods-SCHProgress-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F1CE36200C838B00011F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B8E7A8200C961600AEA022 /* SCHHomeViewController.m in Sources */,
+				2728556520158FEF000CD6CD /* SCHBluetoothViewController.m in Sources */,
+				271A9C86200DCE4D0027D84B /* SCHMvvmUserModel.m in Sources */,
+				27E87DAC2019B70000DF76D7 /* SCHLiveStreamingController.m in Sources */,
+				271A9C72200D9AB00027D84B /* SCHMvvmViewModel.m in Sources */,
+				27AFD2D2204C065100312B32 /* SCHLocationManager.m in Sources */,
+				27F1CE42200C838B00011F29 /* ViewController.m in Sources */,
+				27AFD2CF204BB13900312B32 /* AppDelegate+SCHAppService.m in Sources */,
+				27B8E7AF200C9AB400AEA022 /* SCHHomeViewCell.m in Sources */,
+				271A9C7F200DAD830027D84B /* SCHMvvmCell.m in Sources */,
+				27F1CE4D200C838B00011F29 /* main.m in Sources */,
+				27AFD2CC204BA9CA00312B32 /* SCHBaiDuViewController.m in Sources */,
+				27B8E79A200C8D0300AEA022 /* SCHTableView.m in Sources */,
+				27B8E7A1200C954100AEA022 /* SCHBaseViewController.m in Sources */,
+				271A9C89200DD8D30027D84B /* SCHMvvmClassModel.m in Sources */,
+				27B8E7B6200CAAA500AEA022 /* SCHHomeModel.m in Sources */,
+				271A9C75200D9DCF0027D84B /* SCHHttpManager.m in Sources */,
+				271A9C78200DA46F0027D84B /* SCHMvvmModel.m in Sources */,
+				27D96E19201862FF00DDCC4F /* UIButton+SCH.m in Sources */,
+				27B8E7B3200C9CFD00AEA022 /* SCHJump.m in Sources */,
+				27F1CE3F200C838B00011F29 /* AppDelegate.mm in Sources */,
+				271A9C6D200D91780027D84B /* SCHMvvmViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27F1CE4E200C838B00011F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27F1CE4F200C838B00011F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F1CE51200C838B00011F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EE02A3EF7B6D55F556D1B1 /* Pods-SCHProgress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PPC77PXP2V;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCHProgress/PrefixHeader.pch";
+				INFOPLIST_FILE = SCHProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sicuihuan.SCHProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "12d8de2f-3b6d-40bd-99a8-48e800a646ed";
+				PROVISIONING_PROFILE_SPECIFIER = SCHProgressDevelopmentFiles;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		27F1CE52200C838B00011F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0DA24F9995C2E57DAD72C8 /* Pods-SCHProgress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PPC77PXP2V;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCHProgress/PrefixHeader.pch";
+				INFOPLIST_FILE = SCHProgress/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sicuihuan.SCHProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "12d8de2f-3b6d-40bd-99a8-48e800a646ed";
+				PROVISIONING_PROFILE_SPECIFIER = SCHProgressDevelopmentFiles;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F1CE35200C838B00011F29 /* Build configuration list for PBXProject "SCHProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F1CE4E200C838B00011F29 /* Debug */,
+				27F1CE4F200C838B00011F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F1CE50200C838B00011F29 /* Build configuration list for PBXNativeTarget "SCHProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F1CE51200C838B00011F29 /* Debug */,
+				27F1CE52200C838B00011F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F1CE32200C838B00011F29 /* Project object */;
+}

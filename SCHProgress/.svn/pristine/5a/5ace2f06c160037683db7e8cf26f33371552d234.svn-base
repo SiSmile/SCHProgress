@@ -1,0 +1,104 @@
+//
+//  SCHHttpManager.m
+//  SCHProgress
+//
+//  Created by Mike on 2018/1/16.
+//  Copyright © 2018年 Mike. All rights reserved.
+//
+
+#import "SCHHttpManager.h"
+
+@interface SCHHttpManager ()
+
+@property (nonatomic,strong)  AFHTTPSessionManager *afManager;
+@end
+
+@implementation SCHHttpManager
+#pragma mark -- 网络单例
++ (instancetype)shareClient{
+    static SCHHttpManager *_shareClient = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _shareClient = [[SCHHttpManager alloc] init];
+        
+        //NSURLSessionConfiguration为NSURLSession配置一些请求所需要的策略。如：超时、缓存策略、链接需求的。
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        
+        _shareClient.afManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:SCH_BASE] sessionConfiguration:configuration];
+
+        
+    });
+    return _shareClient;
+}
+
+#pragma mark -- post请求
+- (NSURLSessionDataTask *)postWithUrl:(NSString *)url Params:(NSMutableDictionary *)params ReturnSuccess:(retureSuccessBlock)success ReturnFailure:(retureFailureBlock)failure{
+    if ([AFNetworkReachabilityManager manager].networkReachabilityStatus == AFNetworkReachabilityStatusNotReachable) {
+        NSLog(@"没有网络");
+        return nil;
+    }else{
+        NSLog(@"\n接口地址 --- %@%@ \n 入参 --- %@",SCH_BASE,url,params);
+        return [_afManager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSLog(@"\n接口地址 --- %@%@ \n 返回数据 --- %@",SCH_BASE,url,responseObject);
+            success(responseObject);
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failure(error);
+            
+        }];
+    }
+    
+    
+}
+
+#pragma mark -- get请求
+- (NSURLSessionDataTask *)getWithUrl:(NSString *)url Params:(NSMutableDictionary *)params ReturnSuccess:(retureSuccessBlock)success ReturnFailure:(retureFailureBlock)failure{
+    if ([AFNetworkReachabilityManager manager].networkReachabilityStatus == AFNetworkReachabilityStatusNotReachable) {
+        NSLog(@"没有网络");
+        return nil;
+    }else{
+        
+        NSLog(@"\n接口地址 --- %@%@ \n 入参 --- %@",SCH_BASE,url,params);
+       return [_afManager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSLog(@"\n接口地址 --- %@%@ \n 返回数据 --- %@",SCH_BASE,url,responseObject);
+            
+            success(responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            failure(error);
+        }];
+    }
+    
+}
+
+
+#pragma mark -- 判断网络状态
++ (void)netWorkState{
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WIFI");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"自带网络");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                break;
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络");
+                break;
+                
+            default:
+                break;
+        }
+    }];
+}
+@end
